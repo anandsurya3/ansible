@@ -1,0 +1,9 @@
+- name: variables from the files
+  hosts: local
+  connection: local
+  vars_files:
+  - vars.yml
+  tasks:
+  - name: print the candidate info
+    ansible.builtin.debug:
+      msg: " name : {{name}}, date of birth : {{ dob }}, qulafication : {{ qulafication }}, phone number : {{ number }}, hobbies : {{ hobbies }}"
