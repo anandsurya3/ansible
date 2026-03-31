@@ -1,0 +1,4 @@
+- name: install and nginx
+  host: local
+  tasks:
+  
