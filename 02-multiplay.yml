@@ -1,4 +1,4 @@
-- name: play-01
+- name: play 1
   hosts: local
   tasks:
   - name: play-01 and task-01
