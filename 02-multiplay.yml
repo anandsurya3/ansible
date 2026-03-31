@@ -1,4 +1,4 @@
-- name: play 1
+- name: play-1
   hosts: local
   tasks:
   - name: play 1 and task 1
@@ -9,7 +9,7 @@
     ansible.builtin.debug:
       msg: "this play 1 and task 2"
 
-- name: play 2
+- name: play-2
   host: local
   tasks:
   - name: play 2 and task 1
