@@ -1,14 +1,14 @@
-- name: install and start nignx
+- name: install and start nginx
   hosts: local
   become: yes
   tasks:
-  - name: install nignx
+  - name: install nginx
     ansible.builtin.package:
-      name: nignx
+      name: nginx
       state: present
-    
-  - name: start nignx
+
+  - name: start nginx
     ansible.builtin.service:
-      name: nignx
+      name: nginx
       state: started
       enabled: yes
