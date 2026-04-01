@@ -1,0 +1,7 @@
+- name: inventory variables
+  hosts: local
+  connection: local
+  tasks:
+  - name: course details
+    ansible.builtin.debgu:
+      msg: " learner is : {{ LEARNER }}, duration is : {{ DURATION }}, number is : {{ NUMBER }}"
