@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: course details
-    ansible.builtin.debgu:
+    ansible.builtin.debug:
       msg: " learner is : {{ LEARNER }}, duration is : {{ DURATION }}, number is : {{ NUMBER }}"
