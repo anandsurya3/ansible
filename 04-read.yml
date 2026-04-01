@@ -9,6 +9,6 @@
     prompt: what is your password
     private: true
   tasks:
-    - name: print the credentails
-      ansible.builtin.degub:
-        msg: "your username {{username}}, your password : {{password}}"
+  - name: print the credentails
+    ansible.builtin.debug:
+      msg: "your username is : {{ username }}, your password is {{ password }}"
